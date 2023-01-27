@@ -36,6 +36,8 @@ RUN chown $userid:$groupid /home/$username/.gitconfig
 
 ENV HOME=/home/$username
 ENV USER=$username
+ENV CCACHE_DIR=/tmp/ccache
+ENV USE_CCACHE=true
 
 WORKDIR $HOME
 
